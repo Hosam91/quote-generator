@@ -20,6 +20,7 @@ h1{
     padding: 8px;
 }
 .container{
+    position: relative;
     width: 96%;
     max-width: 400px;
     margin: 0 auto;
@@ -76,6 +77,38 @@ h1{
     grid-row: 1;
 }
 .btns button:last-of-type{
-    grid-column: 2/4;
+    /* grid-column: 2/4; */
     grid-row: 1;
+}
+
+.share{
+    width: 250px;
+    /* height: 250px; */
+    background-color: #262834;
+    position: absolute;
+    top: 99%;
+    left: 99%;
+    border-radius: .2rem;
+    text-align: left;
+    display: none;
+}
+
+.share ul { 
+    list-style: none;
+}
+.share ul li {
+    padding: .5rem;
+    border-bottom: 1px solid #ddd;
+}
+.share ul li:hover a{
+    color: #56cbdb;
+}
+.share ul li a{
+    text-decoration: none;
+    color: #e3e3e3;
+
+}
+.active{
+    display: block;
+
 }
